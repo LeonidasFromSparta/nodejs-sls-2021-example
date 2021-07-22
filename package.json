@@ -1,19 +1,32 @@
 {
-  "name": "nodejs-sls-2021-example",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LeonidasFromSparta/nodejs-sls-2021-example.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LeonidasFromSparta/nodejs-sls-2021-example/issues"
-  },
-  "homepage": "https://github.com/LeonidasFromSparta/nodejs-sls-2021-example#readme"
+    "name": "nodejs-sls-2021-example",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LeonidasFromSparta/nodejs-sls-2021-example.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/LeonidasFromSparta/nodejs-sls-2021-example/issues"
+    },
+    "homepage": "https://github.com/LeonidasFromSparta/nodejs-sls-2021-example#readme",
+    "devDependencies": {
+        "@babel/core": "^7.14.8",
+        "@babel/preset-env": "^7.14.8",
+        "aws-sdk": "^2.952.0",
+        "babel-eslint": "^10.1.0",
+        "babel-loader": "^8.2.2",
+        "eslint": "^7.31.0",
+        "eslint-plugin-babel": "^5.3.1",
+        "serverless": "^2.52.1",
+        "serverless-offline": "^7.0.0",
+        "serverless-webpack": "^5.5.1",
+        "webpack": "^5.46.0"
+    }
 }
