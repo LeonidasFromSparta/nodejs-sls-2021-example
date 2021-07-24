@@ -1,0 +1,41 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "hello",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/sls",
+            "runtimeArgs": [
+                "invoke",
+                "local",
+                "--function",
+                "hello",
+                "--path",
+                "${workspaceFolder}/debug/hello-event.json",
+                "--type",
+                "RequestResponse",
+                "--log",
+                "true"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "goodbye",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/sls",
+            "runtimeArgs": [
+                "invoke",
+                "local",
+                "--function",
+                "goodbye",
+                "--path",
+                "${workspaceFolder}/debug/goodbye-event.json",
+                "--type",
+                "RequestResponse",
+                "--log",
+                "true"
+            ]
+        }
+    ]
+}

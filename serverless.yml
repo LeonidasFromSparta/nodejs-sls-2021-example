@@ -1,0 +1,27 @@
+service: nodejs-sls-2021-example
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: eu-west-1
+  lambdaHashingVersion: 20201221
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+functions:
+  hello:
+    handler: src/apis/hello.handler
+    memorySize: 128
+    events:
+      - httpApi:
+          method: GET
+          path: /hello
+  goodbye:
+    handler: src/apis/goodbye.handler
+    memorySize: 128
+    events:
+      - httpApi:
+          method: POST
+          path: /goodbye
